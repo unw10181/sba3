@@ -21,6 +21,10 @@
         background-size: cover;
         background-blend-mode: luminosity;
       }
+      a {
+        text-decoration: none;
+        color: #4a4a4a;
+      }
       .btn-ios {
         background-color: #26bca4;
         color: white;
@@ -29,6 +33,7 @@
         background-color: #6273ff;
         color: white;
       }
+
       @media (max-width: 768px) {
         header {
           background: url(/images/bg-header-mobile.png) no-repeat center top;
@@ -56,35 +61,57 @@
       </div>
     </header>
 
-    <h3>Keep track of your snippets</h3>
-    <p class="text-secondary">
-      Clipboard instantly stores any item you copy in the cloud, meaning you can
-      access your snippets immediately on all your devices. Our Mac and iOS apps
-      will help you organize everything.
-    </p>
-    <div class="flex-row">
-      <img src="/images/image-computer.png" alt="" />
-      <div class="">
-        <h3>Quick Search</h3>
-        <p class="text-secondary">
-          Easily search your snippets by content, category, web address,
-          application, and more.
+    <section class="py-5">
+      <div class="container">
+        <h3 class="fw-semi-bold mb-3">Keep track of your snippets</h3>
+        <p class="text-secondary mx-auto mb-5" style="max-width: 600px">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
         </p>
-        <h3>iCloud Sync</h3>
-        <p>Instantly saves and syncs snippets across all your devices.</p>
-        <h3>Complete History</h3>
-        <p class="text-secondary">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
-      </div>
-    </div>
 
-    <h2>Access Clipboard anywhere</h2>
-    <p class="text-secondary">
-      Whether you’re on the go, or at your computer, you can access all your
-      Clipboard snippets in a few simple clicks.
-    </p>
-    <img src="/images/image-devices.png" alt="" />
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <img
+              src="/images/image-computer.png"
+              alt="Computer"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="col-md-6 text-md-start">
+            <h5>Quick Search</h5>
+            <p class="text-secondary">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+            <h5>iCloud Sync</h5>
+            <p class="text-secondary">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+            <h5>Complete History</h5>
+            <p class="text-secondary">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h3 class="fw-semi-bold mb-3">Access Clipboard anywhere</h3>
+        <p
+          class="text-secondary mx-auto mb-5 width-60"
+          style="max-width: 600px"
+        >
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+        <img src="/images/image-devices.png" alt="Deivces" class="img-fluid" />
+      </div>
+    </section>
 
     <section class="py-5">
       <div class="container">
@@ -107,7 +134,9 @@
             </p>
           </div>
 
-          <div class="col-md-4 d-flex flex-column align-items-center">
+          <div
+            class="col-md-4 d-flex flex-column justify-content-center align-items-center"
+          >
             <img src="/images/icon-text.svg" alt="Letter A" class="mb-3" />
             <h5>Plain text snippets</h5>
             <p class="text-secondary">
@@ -126,14 +155,16 @@
     </section>
 
     <section class="py-5">
-      <div
-        class="container d-flex flex-wrap justify-content-center align-items-center gap-5"
-      >
-        <img src="/images/logo-google.png" alt="" class="" />
-        <img src="/images/logo-ibm.png" alt="" />
-        <img src="/images/logo-microsoft.png" alt="" />
-        <img src="images/logo-hp.png" alt="" />
-        <img src="/images/logo-vector-graphics.png" alt="" />
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-wrap flex-md-row justify-content-center align-items-center gap-5"
+        >
+          <img src="/images/logo-google.png" alt="google logo" class="" />
+          <img src="/images/logo-ibm.png" alt="ibm logo" />
+          <img src="/images/logo-microsoft.png" alt="microsoft logo" />
+          <img src="images/logo-hp.png" alt="hp logo" />
+          <img src="/images/logo-vector-graphics.png" alt="vector gr logo" />
+        </div>
       </div>
     </section>
 
@@ -159,7 +190,9 @@
         class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
       >
         <img src="/images/logo.svg" alt="Clipboard Logo" style="width: 60px" />
-        <div>
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 my-3 my-md-0"
+        >
           <a href="#">FAQs </a>
           <a href="#">Contact Us</a>
           <a href="#">Privacy Policy</a>
